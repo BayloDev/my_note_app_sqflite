@@ -52,11 +52,7 @@ class DataBaseHelper {
     Database? mydb = await db;
     print('try to insert');
 
-    return await mydb!.insert(_tableName, note.toMap()).then((value) {
-      print('added succ');
-
-      return value;
-    });
+    return await mydb!.insert(_tableName, note.toMap());
   }
 
   Future<int> deleteNote(id) async {

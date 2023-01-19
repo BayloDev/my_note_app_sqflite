@@ -108,10 +108,10 @@ class NoteController extends GetxController {
     Note note = Note(
       title: titleController.text,
       content: contentController.text,
-      dateTimeCreated: DateFormat('MMM dd, yyyy / HH:MM').format(
+      dateTimeCreated: DateFormat('MMM dd, yyyy / hh:mm').format(
         DateTime.now(),
       ),
-      dateTimeEdited: DateFormat('MMM dd, yyyy / HH:MM').format(
+      dateTimeEdited: DateFormat('MMM dd, yyyy / hh:mm').format(
         DateTime.now(),
       ),
       isExpand: 0,
